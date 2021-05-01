@@ -1,0 +1,64 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		}
+		,{
+		    "path" : "pages/my/my",
+		    "style" :  {
+				"app-plus":{
+					"titleNView": false
+				}
+			}
+		}
+	    ,{
+            "path" : "pages/beiwanglu/beiwanglu",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+		,{
+		    "path" : "pages/login/login",
+		    "style" :{
+				"app-plus":{
+					"titleNView": false
+				}
+			}                                                                                    
+		  }  
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar":{
+		"backgroundColor":"#FFFFFF",
+		"color":"#999999",
+		"selectedColor":"#007AFF",
+		"list":[
+			{
+				"text":"首页",
+				"pagePath":"pages/index/index",
+				"iconPath":"static/tab/firstpage.png",
+				"selectedIconPath":"static/tab/firstpage.png"
+			},{
+				"text":"备忘录",
+				"pagePath":"pages/beiwanglu/beiwanglu",
+				"iconPath":"static/tab/beizhu.png",
+				"selectedIconPath":"static/tab/beizhu.png"
+			},{
+				"text":"设置",
+				"pagePath":"pages/my/my",
+				"iconPath":"static/tab/setting.png",
+				"selectedIconPath":"static/tab/setting.png"
+			}
+		]
+	}
+}
